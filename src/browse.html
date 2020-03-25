@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/reset.css" media="all">
+        <link rel="stylesheet" href="./css/style-browse.css" media="all">
+        <script src="jquery-3.4.1.min.js"></script>
+        <title>Browse</title>
+        <script>
+            $(document).ready(function(){
+                $(".country").on("change",function(){
+                    var op=$(".country").val();
+                    if(op=="1"){
+                        $(".city option").remove();
+                        $(".city").append("<option value='0'>Tokyo</option>");
+                        $(".city").append("<option value='1'>Osaka</option>");
+                        $(".city").append("<option value='2'>Kamakura</option>");
+                        $(".city").append("<option value='-1'>None</option>");
+                    }
+                    if(op=="2"){
+                        $(".city option").remove();
+                        $(".city").append("<option value='0'>Rome</option>");
+                        $(".city").append("<option value='1'>Milan</option>");
+                        $(".city").append("<option value='2'>Venice</option>");
+                        $(".city").append("<option value='3'>Florence</option>");
+                        $(".city").append("<option value='-1'>None</option>");
+                    }
+                    if(op=="3"){
+                        $(".city option").remove();
+                        $(".city").append("<option value='0'>New York</option>");
+                        $(".city").append("<option value='1'>San Francisco</option>");
+                        $(".city").append("<option value='2'>Washington</option>");
+                        $(".city").append("<option value='-1'>None</option>");
+                    }
+                    if(op=="0"){
+                        $(".city option").remove();
+                        $(".city").append("<option value='0'>Shanghai</option>");
+                        $(".city").append("<option value='1'>Kunming</option>");
+                        $(".city").append("<option value='2'>Beijing</option>");
+                        $(".city").append("<option value='3'>Yantai</option>");
+                        $(".city").append("<option value='-1'>None</option>");
+                    }
+                    if(op=="-1"){
+                        $(".city option").remove();
+                        $(".city").append("<option value='-1'>None</option>");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a>
+                    <img src="../img/logo.jpg" width="50" height="50">
+                </a>
+                <a href="../index.html">Home</a>
+                <a href="#">Browse</a>
+                <a href="./search.html">Search</a>
+            </nav>
+            <div class="myaccount">
+                <a href="" class="dropdown">
+                    <p>My account<img src="../img/myaccount.png" width="16" height="16"></p>
+                </a>
+                <div class="dropdown-content">
+                    <a href="./upload.html">Upload</a>
+                    <a href="./myphoto.html">My Photo</a>
+                    <a href="./favor.html">My Favourite</a>
+                    <a href="./login.html">Login</a>
+                </div>
+            </div>
+        </header>
+        <div class="aside">
+            <div class="search">
+                <p>Search by title</p>
+                <form class="searchform" action="#" method="POST">
+                    <input type="text" name="keyword">
+                    <input type="submit"  name="search" value="" onclick="alert('已搜索')">
+                </form>
+            </div>
+            <div class="hotcity"> 
+                <p>Hot City</p>
+                <a href="#" onclick="alert('已搜索')">Beijing</a>
+                <a href="#" onclick="alert('已搜索')">Shanghai</a>
+                <a href="#" onclick="alert('已搜索')">Paris</a>
+                <a href="#" onclick="alert('已搜索')">New York</a>
+                <a href="#" onclick="alert('已搜索')">Istanbul</a>
+            </div>
+            <div class="hotcity"> 
+                <p>Hot Country</p>
+                <a href="#" onclick="alert('已搜索')">China</a>
+                <a href="#" onclick="alert('已搜索')">America</a>
+                <a href="#" onclick="alert('已搜索')">Japan</a>
+                <a href="#" onclick="alert('已搜索')">Italy</a>
+                <a href="#" onclick="alert('已搜索')">Russia</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main">
+                <p>Filter</p>
+                <form class="filterform" action="#" method="POST">
+                    <select name="theme" class="theme" >
+                        <option value="" disabled selected hidden>Filter by content</option>
+                        <option value="0">Scenery</option>
+                        <option value="1">History</option>
+                        <option value="2">Culture</option>
+                        <option value="3">Portrait</option>
+                        <option value="-1">None</option>
+                    </select>
+                    <select name="country" class="country">
+                        <option value="" disabled selected hidden>Filter by country</option>
+                        <option value="0">China</option>
+                        <option value="1">Japan</option>
+                        <option value="2">Italy</option>
+                        <option value="3">America</option>
+                        <option value="-1">None</option>
+                    </select>
+                    <select name="city" class="city">
+                        <option value="" disabled selected hidden>Filter by city</option>
+                        <option value="0">Shanghai</option>
+                        <option value="1">Kunming</option>
+                        <option value="2">Beijing</option>
+                        <option value="3">Yantai</option>
+                        <option value="-1">None</option>
+                    </select>
+                    <button class="button" onclick="alert('已筛选')"><span>Filter</span></button>
+                </form>
+                <div class="imgcontent">
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5855221959.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5855729828.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5855735700.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5855752464.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5855774224.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5856616479.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5856654945.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5856658791.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5856697109.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5857298322.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/5857398054.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/6114850721.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/6114859969.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/6114867983.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/6114881215.jpg"></a>
+                        <a class="picshow" href="details.html"><img src="../img/normal/medium/6114904363.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="about">
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">关于</a>
+                <a href="#">联系我们</a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2019-2021 Web Fundamental All Rights Reserved. 备案号：沪FDUCS备017-1号</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,268 @@
+body{
+    font-family:"Segoe UI";
+    color: black;
+    background-color: #f6f6f6;
+    margin:0;
+    font-size:0;
+    line-height: 0px;
+    font-weight: 500;
+}
+header{
+    font-size:16px;
+    height: 50px;
+    background-color: black;
+}
+nav a{
+    padding:0 30px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: grey;
+}
+nav a:nth-child(3){
+    background-color: rgb(44, 43, 43);
+}
+nav a:nth-child(3):hover{
+    color: white;
+}
+nav a:first-child{
+    padding:0;
+}
+header .myaccount{
+    padding-right: 50px;
+    float: right;
+}
+.dropdown p{
+    color: white;
+    padding-top:15px;
+}
+.dropdown{
+    cursor: pointer;
+    text-decoration: none;
+}
+.dropdown-content{
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+    width: 120px;
+}
+.myaccount:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content:hover {
+    display: block;
+}
+.dropdown-content a{
+    border-top: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding:20px 10px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:first-child{
+    border-style: none;
+}
+.aside{
+    text-indent: 30px;
+    display: block;
+    font-size: 16px;
+    float: left;
+    width:24vw;
+}
+.aside div{
+    margin: 20px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+}
+.aside a{
+    text-decoration: none;
+}
+.aside a:hover{
+    color:grey;
+}
+.search{
+    height:calc(6em);
+}
+.search p{
+    line-height: 2.5em;
+    color:rgb(104, 100, 100);
+    background-color: rgb(226, 223, 223);
+    height: 3em;
+    border-bottom: solid 1px grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.searchform{
+    height: 3em;
+}
+.searchform input[type="text"]{
+    float: left;
+    box-sizing : border-box;
+    width: calc(100% - 3.5em);
+    height: 100%;
+    border-style: none;
+    border-bottom-left-radius: 5px;
+    border-right: grey solid 1px;
+    border-bottom: grey solid 1px;
+}
+.searchform input[type="submit"]{
+    cursor: pointer;
+    margin:0.5em 0.5em;
+    float: right;
+    background: url(../../img/search.png);
+    width:32px;
+    height:32px;
+    border:none;
+}
+.hotcity{
+    height:calc(18em + 5px);
+}
+.hotcity a,.hotcity p{
+    line-height: 2.5em;
+    width: 100%;
+    height:3em;
+    float: left;
+}
+.hotcity a{
+    text-align:left;
+    color: dodgerblue;
+    border-top: solid 1px grey;
+}
+.hotcity p{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:rgb(104, 100, 100);
+    background-color: rgb(226, 223, 223);
+}
+.hotcountry{
+    height:calc(18em + 5px);
+}
+.content{
+    width: 74vw;
+    text-indent: 30px;
+    display: block;
+    font-size: 16px;
+    float: right;
+}
+.main{
+    margin:20px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 5px;
+}
+select{
+    float: left;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../../img/filter.png)no-repeat scroll right center;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 1%;
+    width: 25%;
+    border:solid 1px grey ;
+    border-radius: 5px;
+    padding-left: 20px;
+    height:4em;
+}
+select option{
+    font-size: 24px;
+}
+.content div p{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(226, 223, 223);
+    color:grey ;
+    height: 3em;
+    line-height: 2.5em;
+    border-bottom: solid 1px grey;
+}
+.filterform{
+    text-indent:0;
+    padding:10px 10px;
+    border-bottom: solid 1px grey;
+}
+.button{
+    display: inline-block;
+    border: none;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    width:15%;
+    margin: 10px 10px;
+    height:64px;
+}
+.button span {
+    font-size:24px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: -2px;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 15%;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.imgcontent{
+    text-indent: 0;
+}
+.picshow img{
+    margin:1vw 1vw;
+    width:15vw;
+    height:15vw;;
+    object-fit: cover;
+}
+footer{
+    display:inline-block;
+    width: 100%;
+    height: 100px;
+    background-color:black;
+}
+.about{
+
+    width:430px;
+    margin:0 auto;
+}
+.copyright{
+    width:720px;
+    margin:0 auto;
+}
+footer div a,footer div p{
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
