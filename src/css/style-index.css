@@ -7,71 +7,11 @@ body{
     line-height: 0px;
     font-weight: 500;
 }
-header{
-    font-size:16px;
-    height: 50px;
-    background-color: black;
-}
-nav a{
-    padding:0 30px;
-    padding-top: 22px;
-    padding-bottom: 28px;
-    float: left;
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    color: grey;
-}
 nav a:nth-child(2){
     background-color: rgb(44, 43, 43);
 }
 nav a:nth-child(2):hover{
     color: white;
-}
-nav a:first-child{
-    padding:0;
-}
-header .myaccount{
-    padding-right: 50px;
-    float: right;
-}
-.dropdown p{
-    color: white;
-    padding-top:15px;
-}
-.dropdown{
-    cursor: pointer;
-    text-decoration: none;
-}
-.dropdown-content{
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: none;
-    width: 120px;
-}
-.myaccount:hover .dropdown-content {
-    display: block;
-}
-.dropdown-content:hover {
-    display: block;
-}
-.dropdown-content a{
-    border-top: solid;
-    border-width: 1px;
-    border-color: grey;
-    padding:20px 10px;
-    color: black;
-    display: block;
-    text-decoration: none;
-}
-.dropdown-content a:first-child{
-    border-style: none;
 }
 .headimg{
     float: left;
@@ -100,32 +40,6 @@ header .myaccount{
 .picshow p:nth-child(2){
     font-size: 20px;
     font-weight: bold;
-}
-footer{
-    display:inline-block;
-    width: 100%;
-    height: 100px;
-    background-color:black;
-}
-.about{
-
-    width:430px;
-    margin:0 auto;
-}
-.copyright{
-    width:720px;
-    margin:0 auto;
-}
-
-footer div a,footer div p{
-    font-size: 16px;
-    padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    float: left;
-    text-align: center;
-    color: white;
-    text-decoration: none;
 }
 img{
     object-fit: cover;

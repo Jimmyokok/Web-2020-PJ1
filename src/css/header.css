@@ -1,0 +1,81 @@
+/*header css*/
+header{
+    font-size:16px;
+    height: 50px;
+    background-color: black;
+}
+nav a{
+    padding:0 30px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+nav a img{
+    height: 50px;
+    width: 50px;
+}
+header div img{
+    height: 16px;
+    width: 16px;
+}
+a:hover{
+    color: grey;
+}
+nav a:first-child{
+    padding:0;
+}
+header .myaccount{
+    padding-right: 50px;
+    float: right;
+}
+.dropdown p{
+    color: white;
+    padding-top:15px;
+}
+.dropdown{
+    cursor: pointer;
+    text-decoration: none;
+}
+.dropdown-content{
+    z-index: 999;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+    width: 120px;
+}
+.myaccount:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content:hover {
+    display: block;
+}
+.dropdown-content a{
+    border-top: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding:20px 10px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:first-child{
+    border-style: none;
+}
+/*去除input蓝框*/
+input{
+    outline: none;
+}
+textarea{
+    outline: none;
+}
+/*将p元素光标改回默认*/
+p{
+    cursor: default;
+}

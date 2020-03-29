@@ -1,0 +1,108 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+    margin:0;
+    font-size:0;
+    line-height: 0px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head{
+    text-align: center;
+    font-size: 20px;
+    margin:0 auto;
+    width: 576px;
+    height: 200px;
+    min-width: 10vw;
+    min-height: 10vw;
+}
+.head img{
+    object-fit: cover;
+    height: 153px;
+    width: 153px;
+    min-height:8vw;
+    min-width: 8vw;
+    filter: invert(100%);
+}
+.head p{
+    line-height: 2em;
+}
+.form{  
+    font-size: 20px;
+    padding:1vw 1vw;
+    border:solid 1px grey;
+    border-radius: 5px;
+    float: left;
+    width: 30%;
+    margin:10px 0;
+    padding-top: 2vw;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form p{
+    line-height: 30px;
+    width: calc(72% + 80px);
+    margin:10px 20px;
+}
+.form input{
+    width: 72%;
+    margin:5px 20px;
+    padding:20px 40px;
+    border:solid 1px grey;
+    border-radius: 5px;
+}
+.button{
+    display: inline-block;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    width:50%;
+    margin: 5% 5%;
+    line-height:400%;
+}
+.button span {
+    font-size:24px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: padding 0.5s;
+}
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: -5%;
+    right: -10%;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 10%;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.register{
+    float: left;
+    font-size:24px;
+    font-weight: 500;
+    margin:40px auto;
+    text-align: center;
+}
+.register a{
+    text-decoration: none;
+}
+.register a:hover{
+    color:grey;
+}

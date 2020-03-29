@@ -2,26 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./src/css/reset.css" media="all">
-        <link rel="stylesheet" href="./src/css/style-login.css" media="all">
-        <link rel="stylesheet" href="./src/css/footer.css" media="all">
-        <title>Login</title>
+        <link rel="stylesheet" href="./css/reset.css" media="all">
+        <link rel="stylesheet" href="./css/style-login.css" media="all">
+        <link rel="stylesheet" href="./css/footer.css" media="all">
+        <title>Register</title>
     </head>
     <body>
         <div class="head">
-            <img src="./img/logo.jpg">
+            <img src="../img/logo.jpg">
             <p>Sign In</p>
         </div>
         <div class="form">
-            <form action="./src/home.html">
-                <p>Username/E-mail:</p>
+            <form action="../index.html">
+                <p>Username:</p>
                 <input type="text" name="username" required>
+                <p>E-mail:</p>
+                <input type="email" name="email" required>
                 <p>Password:</p>
-                <input type="text" name="password" required>
-                <button class="button" type="submit"><span>Sign In</span></button>
+                <input type="password" name="password" required>
+                <p>Confirm Your Password:</p>
+                <input type="password" name="password2" required>
+                <button class="button" type="submit"><span>Register</span></button>
             </form>
         </div>
-        <p class="register">New?<a href="./src/register.html">Create a new account?</a></p>
         <footer>
             <div class="about">
                 <a href="#">使用条款</a>
