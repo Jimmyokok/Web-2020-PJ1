@@ -241,6 +241,9 @@ body{
         margin-right: 0;
         margin-bottom: 2vw;
     }
+    .redfont{
+        height: 2em;
+    }
     .descdiv{
         margin:0 5%;
         width: 90%;

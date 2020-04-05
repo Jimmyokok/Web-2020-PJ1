@@ -147,7 +147,10 @@ nav a:nth-child(4):hover{
     margin:0 1em;
 }
 @media only screen and (max-width:1600px){
-    .descinput,.result,.textinput{
+    .choice{
+        font-size: 16px;
+    }
+    .descinput,.main,.result,.textinput{
         font-size: 16px;
     }
     .button{
@@ -168,6 +171,12 @@ nav a:nth-child(4):hover{
     }
 }
 @media only screen and (max-width:600px){
+    .main{
+        height: 2em;
+    }
+    .choice{
+        line-height: 2em;
+    }
     .resultdiv{
         height: auto;
     }

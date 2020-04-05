@@ -187,7 +187,7 @@ select option{
     .aside{
         text-indent: 10px;
     }
-    .aside div{
+    .search,.hotcity{
         margin-right: 0;
     }
     .search{
@@ -241,7 +241,7 @@ select option{
    .aside{
        width: 100%;
    }
-   .aside div,.main{
+   .search,.hotcity,.main{
         margin:10px 10px;
    }
    .content{
