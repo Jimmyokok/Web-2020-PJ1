@@ -20,7 +20,7 @@ nav a:nth-child(3):hover{
     float: left;
     width:24vw;
 }
-.aside div{
+.search,.hotcity{
     margin: 20px 20px;
     border-width: 1px;
     border-style: solid;
@@ -34,7 +34,7 @@ nav a:nth-child(3):hover{
     color:grey;
 }
 .search{
-    height:calc(6em);
+    height:6em;
 }
 .search p{
     line-height: 2.5em;
@@ -49,6 +49,7 @@ nav a:nth-child(3):hover{
     height: 3em;
 }
 .searchform input[type="text"]{
+    padding-left: 10px;
     float: left;
     box-sizing : border-box;
     width: calc(100% - 3.5em);
@@ -67,7 +68,7 @@ nav a:nth-child(3):hover{
     height:32px;
     border:none;
 }
-.hotcity{
+.hotcity,.hotcountry{
     height:calc(18em + 5px);
 }
 .hotcity a,.hotcity p{
@@ -86,9 +87,6 @@ nav a:nth-child(3):hover{
     border-top-right-radius: 5px;
     color:rgb(104, 100, 100);
     background-color: rgb(226, 223, 223);
-}
-.hotcountry{
-    height:calc(18em + 5px);
 }
 .content{
     width: 74vw;
@@ -178,6 +176,82 @@ select option{
 .picshow img{
     margin:1vw 1vw;
     width:15vw;
-    height:15vw;;
+    height:15vw;
     object-fit: cover;
+}
+@media only screen and ( max-width:1000px){
+    .search p,.searchform,.hotcity a,.hotcity p,.content div p{
+        height:2em;
+        line-height: 2em;
+    }
+    .aside{
+        text-indent: 10px;
+    }
+    .aside div{
+        margin-right: 0;
+    }
+    .search{
+        height: 4em;
+    }
+    .searchform input[type="text"]{
+        width: calc(100% - 2.5em);
+    }
+    .searchform input[type="submit"]{
+        margin:0;
+        width:32px;
+        height:32px;
+    }
+    .hotcity,.hotcountry{
+        height:calc(12em + 5px);
+    }
+    .content{
+        width: 76vw;
+        text-indent: 20px;
+    }
+    select{
+        width: 48%;
+        height:3em;
+    }
+    .button{
+        width: 48%;
+        height: 48px;
+        margin: 10px 1%;
+    }
+    .button span{
+        font-size: 16px;
+    }
+    .picshow img{
+        width:21vw;
+        height:21vw;
+    }
+    .picshow:last-child{
+        display: none;
+    }
+}
+@media only screen and ( max-width:750px){
+    .picshow img{
+        width:32vw;
+        height:32vw;
+    }
+    .picshow:last-child{
+        display: block;
+    }
+}
+@media only screen and ( max-width:600px){
+   .aside{
+       width: 100%;
+   }
+   .aside div,.main{
+        margin:10px 10px;
+   }
+   .content{
+       width: 100%;
+   }
+   .picshow img{
+        width:calc(98vw - 20px);
+        height:calc(98vw - 20px);
+    }
+    .picshow:last-child{
+        display: block;
+    }
 }

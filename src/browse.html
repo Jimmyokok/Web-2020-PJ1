@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
         <link rel="stylesheet" href="./css/reset.css" media="all">
         <link rel="stylesheet" href="./css/header.css" media="all">
         <link rel="stylesheet" href="./css/style-browse.css" media="all">
@@ -53,10 +54,10 @@
     <body>
         <header>
             <nav>
-                <a>
+                <a href="./home.html">
                     <img src="../img/logo.jpg">
                 </a>
-                <a href="../home.html">Home</a>
+                <a href="./home.html">Home</a>
                 <a href="#">Browse</a>
                 <a href="./search.html">Search</a>
             </nav>
@@ -75,10 +76,10 @@
         <div class="aside">
             <div class="search">
                 <p>Search by title</p>
-                <form class="searchform" action="#" method="POST">
+                <div class="searchform">
                     <input type="text" name="keyword">
                     <input type="submit"  name="search" value="" onclick="alert('已搜索')">
-                </form>
+                </div>
             </div>
             <div class="hotcity"> 
                 <p>Hot City</p>
@@ -96,11 +97,19 @@
                 <a href="#" onclick="alert('已搜索')">Italy</a>
                 <a href="#" onclick="alert('已搜索')">Russia</a>
             </div>
+            <div class="hotcity"> 
+                <p>Hot Content</p>
+                <a href="#" onclick="alert('已搜索')">Scenery</a>
+                <a href="#" onclick="alert('已搜索')">History</a>
+                <a href="#" onclick="alert('已搜索')">Culture</a>
+                <a href="#" onclick="alert('已搜索')">Portrait</a>
+                <a href="#" onclick="alert('已搜索')">Building</a>
+            </div>
         </div>
         <div class="content">
             <div class="main">
                 <p>Filter</p>
-                <form class="filterform" action="#" method="POST">
+                <div class="filterform">
                     <select name="theme" class="theme" >
                         <option value="" disabled selected hidden>Filter by content</option>
                         <option value="0">Scenery</option>
@@ -126,7 +135,7 @@
                         <option value="-1">None</option>
                     </select>
                     <button class="button" onclick="alert('已筛选')"><span>Filter</span></button>
-                </form>
+                </div>
                 <div class="imgcontent">
                         <a class="picshow" href="./details.html"><img src="../img/normal/medium/5855221959.jpg"></a>
                         <a class="picshow" href="./details.html"><img src="../img/normal/medium/5855729828.jpg"></a>

@@ -22,3 +22,22 @@ footer div a,footer div p{
     color: white;
     text-decoration: none;
 }
+@media only screen and ( max-width:720px){
+    .copyright{
+        display: none;
+    }
+    footer{
+        height: 75px;
+    }
+}
+@media only screen and ( max-width:430px){
+    .about a{
+        width:49.5vw;
+        float: left;
+        padding:0;
+        padding-top: 30px;
+    }
+    footer{
+        height: 100px;
+    }
+}

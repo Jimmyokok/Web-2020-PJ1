@@ -5,9 +5,11 @@ header{
     background-color: black;
 }
 nav a{
+    height: 50px;
     padding:0 30px;
-    padding-top: 22px;
-    padding-bottom: 28px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
     float: left;
     color: white;
     text-decoration: none;
@@ -26,13 +28,16 @@ a:hover{
 nav a:first-child{
     padding:0;
 }
-header .myaccount{
+.myaccount{
+    cursor: pointer;
+    height: 50px;
     padding-right: 50px;
     float: right;
 }
 .dropdown p{
+    cursor: pointer;
     color: white;
-    padding-top:15px;
+    padding-top: 15px;
 }
 .dropdown{
     cursor: pointer;
@@ -69,13 +74,43 @@ header .myaccount{
     border-style: none;
 }
 /*去除input蓝框*/
-input{
+input,textarea,button,select{
     outline: none;
 }
-textarea{
-    outline: none;
-}
+
 /*将p元素光标改回默认*/
 p{
     cursor: default;
+}
+/*
+    Desktop:1600px+
+    Large:1000px-1600px
+    Medium:600px-1000px
+    Small:430px-600px
+    Tiny:300px-430px
+*/
+@media only screen and ( max-width:600px){
+    header{
+        height: 30px;
+    }
+    nav a{
+        padding:0 10px;
+        height: 30px;
+    }
+    nav a img{
+        height: 30px;
+        width: 30px;
+    }
+    .myaccount{
+        height: 30px;
+        padding-right:10px;
+    }
+    .dropdown p{
+        padding-top: 5px;
+    }
+}
+@media only screen and ( max-width:430px){
+    header{
+        font-size:12px;
+    }
 }

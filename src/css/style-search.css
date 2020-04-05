@@ -52,8 +52,6 @@ nav a:nth-child(4):hover{
     line-height: 3em;
 }
 .descinput{
-    max-lines: 4;
-    word-break: break-all;
     vertical-align: text-top;
     line-height: 2em;
     font-size: 1vw;
@@ -99,14 +97,17 @@ nav a:nth-child(4):hover{
     right: 0;
 }
 .resultdiv{
+    position: relative;
     float: left;
-    height: 17em;
+    height: 14em;
     border-top: solid 1px grey;
 }
 .resultdiv img{
     float: left;
-    height: 15em;
+    height: 12em;
     margin:1em 1em;
+    max-width: 14em;
+    object-fit: cover;
 }
 .title{
     padding:0  1em;
@@ -117,11 +118,15 @@ nav a:nth-child(4):hover{
     flex-direction: row;
     align-items: center;
     float: right;
-    width: 72%;
+    width:calc(100% - 20vw);
 }
 .desc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
     float: right;
-    width: 72%;
+    width: calc(100% - 20vw);
     padding:0 1.6vw;
     font-size: 1.2vw;
     line-height: 2em;
@@ -140,4 +145,55 @@ nav a:nth-child(4):hover{
 .page a{
     cursor: pointer;
     margin:0 1em;
+}
+@media only screen and (max-width:1600px){
+    .descinput,.result,.textinput{
+        font-size: 16px;
+    }
+    .button{
+        height: 48px;
+        width: 20%;
+        margin-left:40%;
+    }
+    .title{
+        font-size: 24px;
+        width:calc(100% - 310px);
+    }
+    .desc{
+        font-size: 20px;
+        width:calc(100% - 310px);
+    }
+    .page{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .resultdiv{
+        height: auto;
+    }
+    .resultdiv img{
+        width: calc(100% - 2em);
+        max-width: 1000em;
+        height: auto;
+        object-fit: fill;
+    }
+    .title{
+        width:calc(100% - 40px);
+        margin-top: 0.5em;
+        padding:0 20px;
+        justify-content: center;
+    }
+    .desc{
+        width:calc(100% - 40px);
+        padding:0 20px;
+    }
+    .button{
+        width:40%;
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    .page a{
+        cursor: pointer;
+        margin:0 0.5em;
+    }
 }

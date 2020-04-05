@@ -55,20 +55,21 @@ body{
     font-weight: bold;
 }
 .smallfont{
-    font-size: 1vw;
+    font-size: 1.6vw;
     font-weight: 0;
 }
 .image{
     padding:1% 1%;
     float: left;
     width: 75%;
+    min-height: 30em;
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
 }
 .image img{
-    max-height: 30vw;
+    max-height: 40vw;
     object-fit: scale-down;
 }
 .detaildiv{
@@ -78,7 +79,7 @@ body{
     float: right;
 }
 .redfont{
-    height: 3vw;
+    height: 3em;
     color:red;
     font-size: 2vw;
     display: flex;
@@ -94,7 +95,7 @@ body{
     margin-bottom: 2vw;
 }
 .catagory{
-    height: 3vw;
+    height: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -111,6 +112,7 @@ body{
     float: left;
     width: 96%;
     line-height: 3em;
+    margin-bottom: 1%;
 }
 .desc{
     border:1px solid grey;
@@ -153,4 +155,99 @@ body{
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+@media only screen and (max-width:1000px){
+    .content{
+        font-size: 16px;
+    }
+    .head{
+        text-indent: 20px;
+        height: 2em;
+    }
+    .bigfont{
+        font-size: 20px;
+    }
+    .smallfont{
+        font-size: 16px;
+    }
+    .image{
+        padding:0;
+        min-height: 0;
+        width: 100%;
+    }
+    .image img{
+        padding:0 10%;
+        width: 80%;
+        max-height: 1000vw;
+        object-fit: fill;
+    }
+    .detaildiv{
+        margin:2% 10%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .likenumber{
+        width: 45%;
+        margin-bottom: 0;
+        margin-right: 10%;
+    }
+    .imgdetails{
+        width: 45%;
+    }
+    .catagory{
+        height: 2em;
+    }
+    .redfont{
+        font-size: 20px;
+        height: 99px;
+    }
+    .button{
+        width: 39%;
+        margin:2% 30%;
+        margin-top: 0;
+    }
+    .descdiv{
+        margin:0 10%;
+        width: 80%;
+        line-height: 2em;
+        margin-bottom: 1%;
+    }
+    .desc{
+        padding:0 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .head{
+        text-indent: 10px;
+    }
+    .image img{
+        padding:0 5%;
+        width: 90%;
+        max-height: 1000vw;
+        object-fit: fill;
+    }
+    .detaildiv{
+        margin:2% 5%;
+        width: 90%;
+        display: block;
+    }
+    .imgdetails{
+        width: 100%;
+    }
+    .likenumber{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2vw;
+    }
+    .descdiv{
+        margin:0 5%;
+        width: 90%;
+        line-height: 2em;
+        margin-bottom: 1%;
+    }
+    .desc{
+        padding:0 10px;
+    }
 }

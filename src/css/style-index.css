@@ -44,3 +44,44 @@ nav a:nth-child(2):hover{
 img{
     object-fit: cover;
 }
+.auxbuttons{
+    background-color: grey;
+    border-radius: 5px;
+    position: fixed;
+    right:10px;
+    bottom:20px;
+}
+.reload{
+    cursor: pointer;
+}
+.auxbuttons a img{
+    margin:10px 10px;
+}
+@media only screen and ( max-width:600px){
+    .picshow{
+        width:42vw;
+        height:50vw;
+    }
+    .picshow img{
+        width:37vw;
+        height:37vw;
+    }
+    .auxbuttons img{
+        height: 16px;
+        width: 16px;
+    }
+}
+@media only screen and ( max-width:430px){
+    .picshow{
+        width:92vw;
+        height:110vw;
+    }
+    .picshow img{
+        width:87vw;
+        height:87vw;
+    }
+    .auxbuttons img{
+        height: 12px;
+        width: 12px;
+    }
+}

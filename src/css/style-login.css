@@ -14,18 +14,13 @@ body{
 .head{
     text-align: center;
     font-size: 20px;
-    margin:0 auto;
     width: 576px;
     height: 200px;
-    min-width: 10vw;
-    min-height: 10vw;
 }
 .head img{
     object-fit: cover;
     height: 153px;
     width: 153px;
-    min-height:8vw;
-    min-width: 8vw;
     filter: invert(100%);
 }
 .head p{
@@ -38,13 +33,20 @@ body{
     border-radius: 5px;
     float: left;
     width: 30%;
+    min-width: 800px;
     margin:10px 0;
     padding-top: 2vw;
 }
-form{
+input,textarea,button,select{
+    outline: none;
+}
+.formform{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.formform a{
+    width:100%;
 }
 .form p{
     line-height: 30px;
@@ -67,7 +69,7 @@ form{
     border-radius: 5px;
     background-color: #4CAF50;
     width:50%;
-    margin: 5% 5%;
+    margin: 5% 25%;
     line-height:400%;
 }
 .button span {
@@ -99,10 +101,56 @@ form{
     font-weight: 500;
     margin:40px auto;
     text-align: center;
+    padding-bottom: 10px;
 }
 .register a{
     text-decoration: none;
 }
 .register a:hover{
     color:grey;
+}
+@media only screen and (max-width:1000px){
+    .form{
+        width:80%;
+        min-width: 540px;
+    }
+    .head img{
+        height: 100px;
+        width: 100px;
+    }
+    .head{
+        height: 150px;
+    }
+    .register{
+        font-size:20px;
+        margin:20px auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .form{
+        width:90%;
+        min-width: 0;
+    }
+    .head img{
+        height: 50px;
+        width: 50px;
+    }
+    .head{
+        height: 100px;
+    }
+    .form p{
+        line-height: 30px;
+        width: calc(72% + 20px);
+        margin:10px 5px;
+    }
+    .form input{
+        margin:5px 5px;
+        padding:20px 10px;
+        border:solid 1px grey;
+        border-radius: 5px;
+    }
+    .register{
+        font-size:16px;
+        margin:10px auto;
+    }
 }

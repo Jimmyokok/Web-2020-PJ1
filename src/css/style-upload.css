@@ -34,6 +34,7 @@ form{
     padding: 2em 2em;
 }
 .uploadimg{
+    max-width: 100%;
     min-height: 6em;
     max-height: 24em;
 }
@@ -55,7 +56,7 @@ form{
     text-align: center;
     border-radius: 5px;
     background-color: #4CAF50;
-    width:15%;
+    width:20%;
     height: 3vw;
 }
 .button span {
@@ -90,7 +91,6 @@ form{
 }
 .text{
     padding-top: 1em;
-    font-size: 1.2vw;
     width: 96%;
     float: left;
 }
@@ -102,7 +102,6 @@ form{
     align-items: center;
 }
 .textinput{
-    font-size: 1vw;
     border:solid 1px grey;
     border-radius: 10px;
     width: calc(100% - 2em);
@@ -126,4 +125,40 @@ form{
 }
 .button:last-child{
     cursor: pointer;
+}
+@media only screen and (max-width:1600px){
+    .upload{
+        font-size: 16px ;
+    }
+    .button{
+        height: 48px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .main{
+        height:2em;
+        text-indent: 20px;
+    }
+    .text{
+        padding-top: 0.5em;
+    }
+    .text:nth-last-child(2){
+        margin-bottom: 1.5em;
+    }
+}
+@media only screen and (max-width:600px){
+    .text:nth-last-child(2){
+        margin-bottom: 1em;
+    }
+    .button{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:430px){
+    .button{
+        width: 60%;
+    }
+    form{
+        padding: 1em 1em;
+    }
 }

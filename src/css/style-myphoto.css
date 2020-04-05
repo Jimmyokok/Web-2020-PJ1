@@ -28,6 +28,7 @@ body{
     align-items: center;
 }
 .favordiv{
+    position: relative;
     float: left;
     height: 20em;
     border-top: solid 1px grey;
@@ -36,6 +37,8 @@ body{
     float: left;
     height: 18em;
     margin:1em 1em;
+    max-width: 20em;
+    object-fit: cover;
 }
 .title{
     padding:0  1em;
@@ -46,11 +49,15 @@ body{
     flex-direction: row;
     align-items: center;
     float: right;
-    width: 67%;
+    width:calc(100% - 26vw);
 }
 .desc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
     float: right;
-    width: 67%;
+    width:calc(100% - 26vw);
     padding:0 1.6vw;
     font-size: 1.2vw;
     line-height: 2em;
@@ -65,8 +72,12 @@ body{
     background-color: rgb(192, 64, 64);
     width:20%;
     height: 3vw;
-    margin-right: 2.4vw;
-    margin-top: 0.3vw;
+    position: absolute;
+    bottom: 1vw;
+    right: 2vw;
+}
+.button:nth-child(5){
+    right: calc(3vw + 20%);
 }
 .button span {
     font-size:24px;
@@ -108,4 +119,53 @@ body{
 .page a{
     cursor: pointer;
     margin:0 1em;
+}
+@media only screen and (max-width:1600px){
+    .myfavor{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 24px;
+        width:calc(100% - 410px);
+    }
+    .desc{
+        font-size: 20px;
+        width:calc(100% - 410px);
+    }
+    .button{
+        height: 48px;
+        bottom: 32px;
+    }
+    .page{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .favordiv{
+        height: auto;
+    }
+    .favordiv img{
+        width: calc(100% - 2em);
+        max-width: 1000em;
+        height: auto;
+        object-fit: fill;
+    }
+    .title{
+        width:calc(100% - 40px);
+        padding:0 20px;
+        justify-content: center;
+    }
+    .desc{
+        width:calc(100% - 40px);
+        padding:0 20px;
+    }
+    .button{
+        position: unset;
+        width:40%;
+        margin:10px 30%;
+    }
+    .page a{
+        cursor: pointer;
+        margin:0 0.5em;
+    }
 }

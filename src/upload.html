@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no" />
         <link rel="stylesheet" href="./css/reset.css" media="all">
         <link rel="stylesheet" href="./css/header.css" media="all">
         <link rel="stylesheet" href="./css/style-upload.css" media="all">
@@ -17,6 +18,7 @@
                     var ext = filename.type.split("/")[1];
                     var name=e.currentTarget.files[0].name
                     if(filetype.test(ext)){
+                        $(".button span:nth-child(2)").text("Reupload");
                         $(".uploadimg").attr("src","");
                         fileread.readAsDataURL(filename);
                         fileread.onload=function(){
@@ -34,7 +36,7 @@
     <body>
         <header>
             <nav>
-                <a>
+                <a href="./home.html">
                     <img src="../img/logo.jpg">
                 </a>
                 <a href="./home.html">Home</a>
@@ -55,7 +57,7 @@
         </header>
         <div class="upload">
             <p class="main">Upload</p>
-            <form action="./myphoto.html">
+            <form action="./myphoto.html" method="GET">
                 <img class="uploadimg" src="">
                 <div class="imgpath"><p class="path">No image here</p></div>
                 <div class="button">
