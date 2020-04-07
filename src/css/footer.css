@@ -6,6 +6,7 @@ footer{
 }
 .about{
     width:430px;
+    max-width: 100%;
     margin:0 auto;
 }
 .copyright{

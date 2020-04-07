@@ -45,9 +45,7 @@ nav a:first-child{
 }
 .dropdown-content{
     z-index: 999;
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
+    border:solid 1px grey;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
@@ -65,10 +63,13 @@ nav a:first-child{
     border-top: solid;
     border-width: 1px;
     border-color: grey;
-    padding:20px 10px;
+    padding:10px 10px;
     color: black;
     display: block;
     text-decoration: none;
+}
+.dropdown-content a:hover{
+    color:grey;
 }
 .dropdown-content a:first-child{
     border-style: none;
@@ -112,5 +113,8 @@ p{
 @media only screen and ( max-width:430px){
     header{
         font-size:12px;
+    }
+    .dropdown-content{
+        right: 20px;
     }
 }
